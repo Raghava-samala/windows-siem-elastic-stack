@@ -1,0 +1,23 @@
+# Sanitized Filebeat example for a Windows Event Log lab.
+# Verify syntax and options against the Filebeat version you install.
+
+filebeat.inputs:
+  - type: winlog
+    name: Security
+
+  - type: winlog
+    name: System
+
+  - type: winlog
+    name: Application
+
+output.elasticsearch:
+  hosts: ["https://192.168.56.104:9200"]
+  username: "elastic"
+  password: "${ELASTIC_PASSWORD}"
+  ssl.verification_mode: none
+
+# SECURITY: ssl.verification_mode: none is included only to document
+# the temporary self-signed-certificate workaround used in this lab.
+# For production, configure a trusted CA certificate and verify TLS.
+# Do not commit real passwords, tokens, or certificates.

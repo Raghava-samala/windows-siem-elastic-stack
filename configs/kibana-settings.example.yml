@@ -1,0 +1,8 @@
+# Relevant Kibana settings from the lab; not a complete kibana.yml.
+server.host: "0.0.0.0"
+elasticsearch.hosts: ["https://localhost:9200"]
+elasticsearch.username: "kibana_system"
+elasticsearch.ssl.verificationMode: none
+
+# SECURITY: verificationMode: none was a temporary lab workaround.
+# Use a trusted CA and proper certificate verification in production.

@@ -1,0 +1,23 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+filebeat.yml
+kibana.yml
+
+# Logs and local data
+*.log
+*.pid
+.DS_Store
+Thumbs.db
+
+# Local exports and potentially sensitive event data
+*.csv
+*.json
+*.ndjson
+exports/
