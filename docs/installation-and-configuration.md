@@ -8,8 +8,8 @@ These notes document the configuration performed in the lab. Package repository 
 - Ubuntu Server VM: `192.168.56.104`
 - Windows 11 VM: `192.168.56.101`
 - Host-only subnet: `192.168.56.0/24`
-- Elasticsearch: 9.5.5
-- Filebeat: 9.5.5
+- Elasticsearch: Latest version*
+- Filebeat: Latest version *
 
 Ubuntu also had a NAT adapter for internet access.
 
